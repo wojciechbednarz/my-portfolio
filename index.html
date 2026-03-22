@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend Learning Journal | Habit Tracker Case Study</title>
+    <meta
+      name="description"
+      content="Engineering notes from building Habit Tracker with FastAPI, async Python, AI integrations, and production-oriented quality practices."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Backend Learning Journal | Habit Tracker Case Study" />
+    <meta
+      property="og:description"
+      content="Engineering notes from building Habit Tracker with FastAPI, async Python, AI integrations, and production-oriented quality practices."
+    />
+    <meta property="og:url" content="https://yourusername.github.io/your-repo/" />
+    <meta property="og:image" content="https://yourusername.github.io/your-repo/og-preview.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Backend Learning Journal | Habit Tracker Case Study" />
+    <meta
+      name="twitter:description"
+      content="Engineering notes from building Habit Tracker with FastAPI, async Python, AI integrations, and production-oriented quality practices."
+    />
+    <meta name="twitter:image" content="https://yourusername.github.io/your-repo/og-preview.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-left"></div>
+    <div class="bg-orb orb-right"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top">WB</a>
+      <nav class="nav-links">
+        <a href="#insights">Insights</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#principles">Principles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Backend + AI learning in public</p>
+        <h1>How I built a production-minded Habit Tracker with FastAPI, async Python, and AI coaching.</h1>
+        <p class="hero-copy">
+          This website documents my real engineering process: architecture decisions, tradeoffs, and lessons from
+          building and testing a full backend system.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#insights">Read Technical Insights</a>
+          <a class="btn btn-secondary" href="#contact">Contact</a>
+        </div>
+      </section>
+
+      <section class="section now-learning">
+        <h2>Project Snapshot: Habit Tracker</h2>
+        <div class="chip-grid">
+          <span class="chip">FastAPI + Pydantic v2</span>
+          <span class="chip">Async SQLAlchemy + PostgreSQL</span>
+          <span class="chip">Redis Caching + Invalidation</span>
+          <span class="chip">Ollama LLM Integration</span>
+          <span class="chip">AWS SQS/SES/S3 Worker</span>
+          <span class="chip">Repository + Service Layers</span>
+          <span class="chip">Pytest + Hypothesis + Testcontainers</span>
+          <span class="chip">CI: Ruff, mypy, pre-commit, Trivy</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Project Signals</h2>
+        <div class="idea-grid">
+          <article class="idea-card reveal">
+            <h3>6 API Areas</h3>
+            <p>Habits, users, admin, security, AI, and reports are split into dedicated router modules.</p>
+          </article>
+          <article class="idea-card reveal">
+            <h3>3 AWS Services</h3>
+            <p>Asynchronous workflow integrates SQS for triggers, S3 for report storage, and SES for delivery.</p>
+          </article>
+          <article class="idea-card reveal">
+            <h3>5 CI Quality Gates</h3>
+            <p>Format check, linting, pre-commit checks, test run, and Trivy image vulnerability scanning.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="insights" class="section">
+        <div class="section-head">
+          <h2>Featured Engineering Insights</h2>
+          <div class="filters" role="group" aria-label="Filter insights">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="ai">AI</button>
+            <button class="filter-btn" data-filter="quality">Quality</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" data-category="backend">
+            <p class="meta">FastAPI Architecture</p>
+            <h3>Layered design made the backend easier to scale and test</h3>
+            <p>
+              I separated routers, dependencies, services, repositories, and infrastructure. This made domain logic
+              easier to test independently and reduced route complexity.
+            </p>
+            <a href="#post-1">Read insight</a>
+          </article>
+
+          <article class="card reveal" data-category="ai">
+            <p class="meta">AI Integration</p>
+            <h3>I treated AI responses as typed contracts, not plain text</h3>
+            <p>
+              The Ollama client enforces JSON output and validates it with Pydantic schemas. That decision reduced
+              downstream parsing issues and kept AI endpoints predictable.
+            </p>
+            <a href="#post-2">Read insight</a>
+          </article>
+
+          <article class="card reveal" data-category="quality">
+            <p class="meta">Testing Strategy</p>
+            <h3>Property-based tests exposed edge cases I would not handwrite</h3>
+            <p>
+              I combined unit, integration, and property-based tests (Hypothesis) with testcontainers for realistic DB
+              and Redis checks.
+            </p>
+            <a href="#post-3">Read insight</a>
+          </article>
+
+          <article class="card reveal" data-category="backend">
+            <p class="meta">Async Workflows</p>
+            <h3>Background events and SQS workers kept user actions responsive</h3>
+            <p>
+              Habit completion dispatches events in background tasks, while report generation runs asynchronously via
+              SQS, PDF rendering, S3 upload, and SES email delivery.
+            </p>
+            <a href="#post-4">Read insight</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="evidence" class="section">
+        <h2>Technical Evidence from the Project</h2>
+        <div class="idea-grid">
+          <article class="idea-card reveal">
+            <h3>Security and Auth</h3>
+            <p>
+              JWT auth, password hashing with `pwdlib`, role-based admin checks, plus middleware-based security headers
+              and request ID propagation.
+            </p>
+          </article>
+          <article class="idea-card reveal">
+            <h3>Observability and Reliability</h3>
+            <p>
+              Structlog setup, centralized exception handlers, custom AWS X-Ray middleware, and resilient AI client
+              error handling for network and validation failures.
+            </p>
+          </article>
+          <article class="idea-card reveal">
+            <h3>Quality Gates and DevEx</h3>
+            <p>
+              CI runs formatting, linting, pre-commit checks, tests, plus Trivy image scanning. Local workflow uses
+              `just` commands and strict mypy settings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section post-list">
+        <h2>Learning Process and Techniques</h2>
+        <article id="post-1" class="post reveal">
+          <h3>1) Design boundaries first, then implement</h3>
+          <p>
+            I started with clear boundaries: API contracts in schemas, business logic in services, data access in
+            repositories, and side effects in infrastructure modules.
+          </p>
+        </article>
+        <article id="post-2" class="post reveal">
+          <h3>2) Use dependency injection to control complexity</h3>
+          <p>
+            FastAPI `Depends` helped me wire managers, repositories, and clients consistently, and made testing easier
+            through dependency overrides.
+          </p>
+        </article>
+        <article id="post-3" class="post reveal">
+          <h3>3) Validate at boundaries and fail safely</h3>
+          <p>
+            Pydantic validators sanitize payloads, repositories raise typed exceptions, and API handlers return explicit
+            HTTP responses through global exception mapping.
+          </p>
+        </article>
+        <article id="post-4" class="post reveal">
+          <h3>4) Build async pipelines for real workloads</h3>
+          <p>
+            I used asyncio gather for concurrent data fetches and AI calls, background tasks for event dispatch, and an
+            async worker loop for reports to avoid blocking API request paths.
+          </p>
+        </article>
+      </section>
+
+      <section id="principles" class="section about">
+        <h2>Best Coding Principles I Applied</h2>
+        <ul>
+          <li>Separation of concerns across API, service, repository, and infrastructure layers</li>
+          <li>Dependency inversion with interfaces/protocol-like repository boundaries</li>
+          <li>Strong typing and schema validation to keep contracts explicit</li>
+          <li>Defense in depth: auth checks, security headers, and exception normalization</li>
+          <li>Performance pragmatism: targeted Redis caching with explicit cache invalidation</li>
+          <li>Test depth: unit + integration + property-based tests, not only happy paths</li>
+          <li>Automation first: CI pipelines and pre-commit hooks as quality guardrails</li>
+        </ul>
+      </section>
+
+      <section class="section about">
+        <h2>What I Can Bring to a Backend Team</h2>
+        <p>
+          I can contribute across architecture, implementation, and reliability: designing clean APIs, building async
+          services, integrating AI responsibly, and shipping code with strong testing and quality gates.
+        </p>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <h2>Contact</h2>
+      <p>
+        I share architecture decisions, implementation tradeoffs, and lessons learned from this project to make the
+        engineering process transparent and useful.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:bednarz.wojciech96@gmail.com">bednarz.wojciech96@gmail.com</a>
+        <a href="https://linkedin.com/in/wojciech-bednarz-b359661b8">LinkedIn</a>
+        <a href="https://github.com/wojciechbednarz/habit-tracker">Habit Tracker GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
