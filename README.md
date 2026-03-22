@@ -1,39 +1,38 @@
-# Habit Tracker Blog Site Deployment
+# Backend Portfolio Website
 
-This repository is configured for automatic deployment to GitHub Pages.
+This repository contains my personal portfolio website.
 
-## 1. Create a GitHub repository
-Create an empty GitHub repository (for example: `habit-tracker-blog`).
+It presents my backend and AI engineering work, learning process, and coding principles.
+My **main project** is [Habit Tracker](https://github.com/wojciechbednarz/habit-tracker), and this site is the public showcase of that work plus additional portfolio projects over time.
 
-## 2. Add remote and push this code
-Run these commands from `C:\Users\wed\Documents\Playground`:
+## What this repo includes
 
-```powershell
-git add .
-git commit -m "Add recruiter-facing blog site and GitHub Pages deploy workflow"
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin master
-```
+- Static portfolio website (`index.html`, `styles.css`, `script.js`)
+- Social preview image (`og-preview.svg`)
+- GitHub Pages deployment workflow (`.github/workflows/deploy-pages.yml`)
+- No-build deployment setup (`.nojekyll`)
 
-If your default branch is `main`, push with:
+## Main project highlighted on the site
 
-```powershell
-git push -u origin master:main
-```
+- Habit Tracker (FastAPI, async Python, AI integration, AWS workflow, testing and CI quality gates)
 
-## 3. Enable GitHub Pages
-In GitHub:
+## Deploy with GitHub Pages
 
-1. Open your repo.
-2. Go to `Settings -> Pages`.
-3. Under `Build and deployment`, choose `Source: GitHub Actions`.
+This repo is configured for deployment through **GitHub Actions**.
 
-After that, each push to `master` or `main` will auto-deploy.
+1. Push this repository to GitHub.
+2. In the repository settings, open `Settings -> Pages`.
+3. Set `Build and deployment -> Source` to `GitHub Actions`.
+4. Each push to `master` or `main` triggers auto-deployment.
 
-## 4. Your live URL
-- Project repo: `https://<your-username>.github.io/<repo>/`
-- User/Org repo named `<your-username>.github.io`: `https://<your-username>.github.io/`
+## Configure metadata after first deploy
 
-## Optional: Custom domain
-You can add a custom domain in `Settings -> Pages`.
-GitHub provides free TLS certificates.
+After your first successful deployment, update these values in `index.html`:
+
+- `og:url` to your real website URL
+- `og:image` to your real website URL + `/og-preview.svg`
+
+Example:
+
+- `https://<your-username>.github.io/<repo>/`
+- `https://<your-username>.github.io/<repo>/og-preview.svg`
