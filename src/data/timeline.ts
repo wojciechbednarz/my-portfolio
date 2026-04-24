@@ -4,17 +4,17 @@ export const timeline: TimelineItem[] = [
   {
     id: "foundation",
     period: "2024",
-    title: "Backend Engineering Foundation",
+    title: "SDET Foundation and Backend Transition",
     description:
-      "Built core Python backend skills with API design, data modeling, and service-layer architecture.",
+      "Started as an SDET and built strong quality habits, then moved deeper into Python backend engineering with API design and service-layer architecture.",
     outcomes: ["Shipped production-like REST flows", "Adopted clean layering patterns"],
   },
   {
     id: "quality-engineering",
     period: "2025",
-    title: "Quality and TestOps Focus",
+    title: "Python Backend and Reliability Engineering",
     description:
-      "Expanded into reliability engineering with test automation, integration testing, and CI quality gates.",
+      "Expanded backend ownership with reliability engineering practices: integration testing, CI quality gates, and failure-resistant design.",
     outcomes: ["Added property-based testing", "Standardized lint/type/test pipelines"],
   },
   {
@@ -28,9 +28,12 @@ export const timeline: TimelineItem[] = [
   {
     id: "positioning",
     period: "Now",
-    title: "SDET / TestOps / Backend Positioning",
+    title: "Python Backend + AI/LLM + AWS Focus",
     description:
-      "Combining backend engineering execution with test strategy and operational quality to ship dependable systems.",
-    outcomes: ["Portfolio aligned to production reliability", "High-signal project case studies"],
+      "Now focused fully on Python backend development for AI/LLM and cloud-native AWS systems.",
+    outcomes: [
+      "Portfolio aligned to production reliability",
+      "High-signal project case studies for Python backend + AI/LLM + AWS roles",
+    ],
   },
 ];

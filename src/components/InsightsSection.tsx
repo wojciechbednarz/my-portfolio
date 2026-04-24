@@ -14,7 +14,7 @@ const insights = [
       "Treating AI responses as typed contracts reduced parser fragility and improved endpoint predictability.",
   },
   {
-    category: "TestOps",
+    category: "Quality Engineering",
     title: "Quality gates shift defects left",
     description:
       "Combining lint, type checks, property tests, and integration checks in CI made delivery safer and faster.",

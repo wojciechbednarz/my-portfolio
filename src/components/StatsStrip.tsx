@@ -35,7 +35,7 @@ function AnimatedValue({ target }: { target: number }) {
 const stats = [
   { label: "Featured Projects", value: 4, suffix: "+" },
   { label: "Core Domains", value: 3, suffix: "" },
-  { label: "CI/Test Focus Areas", value: 5, suffix: "" },
+  { label: "Production Quality Practices", value: 5, suffix: "" },
 ];
 
 export function StatsStrip() {

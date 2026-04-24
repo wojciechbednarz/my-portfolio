@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 
-const trustTags = ["FastAPI", "TestOps", "CI/CD", "AI Systems", "Cloud Workflows"];
+const trustTags = ["Python Backend", "FastAPI", "AI/LLM", "AWS Cloud", "CI/CD"];
 
 export function Hero() {
   const reduceMotion = useReducedMotion();
@@ -15,7 +15,7 @@ export function Hero() {
         transition={{ duration: 0.35 }}
         className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-600 dark:text-cyan-300"
       >
-        SDET / TestOps / Backend Engineer
+        Python Backend Engineer
       </motion.p>
 
       <motion.h1
@@ -24,7 +24,7 @@ export function Hero() {
         transition={{ duration: 0.42, delay: 0.06 }}
         className="mt-4 max-w-4xl text-3xl font-extrabold leading-tight md:text-5xl"
       >
-        Building reliable backend and AI systems with production-grade testing discipline.
+        Building reliable Python backend and AI systems for cloud-native products.
       </motion.h1>
 
       <motion.p
@@ -33,8 +33,8 @@ export function Hero() {
         transition={{ duration: 0.42, delay: 0.12 }}
         className="mt-5 max-w-3xl text-slate-700 dark:text-slate-300"
       >
-        I design and ship quality-focused systems across FastAPI backends, AI integrations, cloud workflows,
-        and automated quality pipelines.
+        I started as an SDET and now focus fully on Python backend development, building FastAPI services,
+        AI/LLM integrations, and AWS workflows with production-grade reliability.
       </motion.p>
 
       <motion.div
