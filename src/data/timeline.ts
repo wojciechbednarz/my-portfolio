@@ -2,38 +2,51 @@ import type { TimelineItem } from "@/types/portfolio";
 
 export const timeline: TimelineItem[] = [
   {
-    id: "foundation",
-    period: "2024",
-    title: "SDET Foundation and Backend Transition",
+    id: "nokia",
+    period: "Oct 2020-Jan 2025",
+    title: "Integration and Testing Engineer - Nokia",
     description:
-      "Started as an SDET and built strong quality habits, then moved deeper into Python backend engineering with API design and service-layer architecture.",
-    outcomes: ["Shipped production-like REST flows", "Adopted clean layering patterns"],
-  },
-  {
-    id: "quality-engineering",
-    period: "2025",
-    title: "Python Backend and Reliability Engineering",
-    description:
-      "Expanded backend ownership with reliability engineering practices: integration testing, CI quality gates, and failure-resistant design.",
-    outcomes: ["Added property-based testing", "Standardized lint/type/test pipelines"],
-  },
-  {
-    id: "ai-systems",
-    period: "2026",
-    title: "AI + Backend Systems",
-    description:
-      "Integrated LLM workflows into backend products with schema validation, resilient error handling, and async processing.",
-    outcomes: ["Released AI Research Assistant", "Built VitaOS and Aegis Tactical AI"],
-  },
-  {
-    id: "positioning",
-    period: "Now",
-    title: "Python Backend + AI/LLM + AWS Focus",
-    description:
-      "Now focused fully on Python backend development for AI/LLM and cloud-native AWS systems.",
+      "Started in Nokia with integration and system testing, building strong SDET foundations across Python-based automation and telecom environments.",
     outcomes: [
-      "Portfolio aligned to production reliability",
-      "High-signal project case studies for Python backend + AI/LLM + AWS roles",
+      "Built robust automation across UI, API, and system layers using Python, Robot Framework, and Selenium",
+      "Worked in Linux/Unix with advanced Bash scripting plus Docker, Kubernetes, and telecom networking protocols",
+      "Contributed to CI/CD and test strategy using GitLab, Jenkins, and scalable test repositories",
+    ],
+  },
+  {
+    id: "spyrosoft-qa",
+    period: "Jan 2025-Jan 2026",
+    title: "QA Automation Engineer - Spyrosoft",
+    description:
+      "Focused on iOS mobile test automation with Python and Appium while supporting reliable release delivery across teams.",
+    outcomes: [
+      "Developed and maintained automated tests with Pytest, unittest, and Behave (BDD)",
+      "Collaborated with developers on release quality and test coverage using automated and manual approaches",
+      "Supported CI/CD workflows in Azure DevOps and built internal Python tooling",
+    ],
+  },
+  {
+    id: "spyrosoft-senior",
+    period: "Jan 2026-Present",
+    title: "Senior QA Automation Software Engineer - Spyrosoft",
+    description:
+      "Expanded ownership of automation quality in production projects while continuing deep technical work in Python and Appium.",
+    outcomes: [
+      "Continued advanced iOS automation delivery with Python and Appium",
+      "Strengthened release confidence through stable regression automation",
+      "Maintained reusable internal tooling and practical CI quality workflows",
+    ],
+  },
+  {
+    id: "transition-backend",
+    period: "2025-Present",
+    title: "Transition to Python Backend + AI Systems",
+    description:
+      "Moved from QA automation into backend engineering through project work centered on FastAPI services, async workflows, and AI/LLM integrations.",
+    outcomes: [
+      "Released Habit Tracker and AI Research Assistant",
+      "Built VitaOS and Aegis Tactical AI",
+      "Current direction: full-time Python backend development for AI/LLM and AWS systems",
     ],
   },
 ];
