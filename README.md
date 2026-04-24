@@ -1,38 +1,40 @@
-# Backend Portfolio Website
+# Backend Portfolio (React + Vite)
 
-This repository contains my personal portfolio website.
+Modern SaaS-style portfolio website for backend, SDET, and TestOps engineering work.
 
-It presents my backend and AI engineering work, learning process, and coding principles.
-My **main project** is [Habit Tracker](https://github.com/wojciechbednarz/habit-tracker), and this site is the public showcase of that work plus additional portfolio projects over time.
+Live site: https://wojciechbednarz.github.io/my-portfolio/
 
-## What this repo includes
+## Stack
 
-- Static portfolio website (`index.html`, `styles.css`, `script.js`)
-- Social preview image (`og-preview.svg`)
-- GitHub Pages deployment workflow (`.github/workflows/deploy-pages.yml`)
-- No-build deployment setup (`.nojekyll`)
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- GitHub Pages via GitHub Actions
 
-## Main project highlighted on the site
+## Local development
 
-- Habit Tracker (FastAPI, async Python, AI integration, AWS workflow, testing and CI quality gates)
+```bash
+npm install
+npm run dev
+```
 
-## Deploy with GitHub Pages
+## Production build
 
-This repo is configured for deployment through **GitHub Actions**.
+```bash
+npm run build
+npm run preview
+```
 
-1. Push this repository to GitHub.
-2. In the repository settings, open `Settings -> Pages`.
-3. Set `Build and deployment -> Source` to `GitHub Actions`.
-4. Each push to `master` or `main` triggers auto-deployment.
+## Deployment
 
-## Configure metadata after first deploy
+The repository deploys automatically on push to `master`/`main`.
+GitHub Actions builds the app and publishes `dist/` to GitHub Pages.
 
-After your first successful deployment, update these values in `index.html`:
+## Content model
 
-- `og:url` to your real website URL
-- `og:image` to your real website URL + `/og-preview.svg`
+- Project data: `src/data/projects.ts`
+- Stack data: `src/data/stack.ts`
+- Timeline data: `src/data/timeline.ts`
 
-Example:
-
-- `https://<your-username>.github.io/<repo>/`
-- `https://<your-username>.github.io/<repo>/og-preview.svg`
+Update those files to keep portfolio content current.
