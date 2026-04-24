@@ -23,9 +23,14 @@ export function StackGrid() {
             <h3 className="text-base font-semibold">{category.title}</h3>
             <ul className="mt-3 space-y-2">
               {category.items.map((item) => (
-                <li key={item.name} className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                  <span aria-hidden>{item.icon}</span>
-                  <span>{item.name}</span>
+                <li key={item.name} className="flex items-center gap-3 text-sm text-slate-700 dark:text-slate-300">
+                  <span
+                    aria-hidden
+                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-slate-300/80 bg-slate-100 text-[10px] font-bold tracking-wide text-slate-700 dark:border-white/15 dark:bg-white/10 dark:text-slate-100"
+                  >
+                    {item.icon}
+                  </span>
+                  <span className="leading-none">{item.name}</span>
                 </li>
               ))}
             </ul>
