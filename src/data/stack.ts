@@ -42,7 +42,7 @@ export const stackCategories: StackCategory[] = [
     ],
   },
   {
-    title: "Frontend and Tooling",
+    title: "Frontend (Working Knowledge)",
     items: [
       { name: "React", icon: "RE" },
       { name: "TypeScript", icon: "TS" },

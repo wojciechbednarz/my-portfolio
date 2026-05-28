@@ -9,6 +9,9 @@ export function StackGrid() {
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 md:text-base">
         Technologies used across shipped projects and ongoing backend-focused work.
       </p>
+      <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 md:text-sm">
+        Frontend tools are supporting skills used for portfolio and product UI work; primary focus remains Python backend engineering.
+      </p>
 
       <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {stackCategories.map((category, index) => (
