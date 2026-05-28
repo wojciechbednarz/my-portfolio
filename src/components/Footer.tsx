@@ -4,8 +4,8 @@ export function Footer() {
       <section className="glass-panel rounded-2xl p-6 md:p-8">
         <h2 className="text-xl font-bold md:text-2xl">Contact</h2>
         <p className="mt-2 max-w-2xl text-sm text-slate-700 dark:text-slate-300 md:text-base">
-          I share architecture decisions, implementation tradeoffs, and lessons learned from real systems to keep the
-          engineering process transparent and practical.
+          Happy to discuss backend architecture decisions, implementation tradeoffs, testing strategy, and AI
+          integration patterns in Python systems.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-3">

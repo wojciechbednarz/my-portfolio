@@ -13,10 +13,10 @@ export default function App() {
       <Hero />
       <StatsStrip />
       <ProjectsSection />
+      <EvidenceSection />
       <StackGrid />
       <TimelineSection />
       <InsightsSection />
-      <EvidenceSection />
     </MainLayout>
   );
 }

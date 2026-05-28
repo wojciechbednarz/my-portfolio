@@ -47,7 +47,7 @@ export function ProjectCard({ name, summary, tags, repoUrl, note, highlight }: P
             rel="noreferrer"
             className="mt-5 inline-block text-sm font-semibold text-cyan-700 transition group-hover:text-cyan-600 dark:text-cyan-300 dark:group-hover:text-cyan-200"
           >
-            Open project {"->"}
+            View repository {"->"}
           </a>
         ) : null}
       </div>

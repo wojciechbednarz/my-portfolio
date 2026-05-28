@@ -9,7 +9,7 @@ export function ProjectsSection() {
       <div className="mb-4">
         <h2 className="text-2xl font-bold md:text-3xl">Featured Projects</h2>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 md:text-base">
-          Flagship backend and AI projects focused on reliability, architecture quality, and execution discipline.
+          Backend and AI projects focused on clear service boundaries, reliability practices, and practical implementation choices.
         </p>
       </div>
 

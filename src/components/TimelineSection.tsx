@@ -5,9 +5,9 @@ import { timeline } from "@/data/timeline";
 export function TimelineSection() {
   return (
     <section id="timeline" className="mt-10">
-      <h2 className="text-2xl font-bold md:text-3xl">Experience and Learning Timeline</h2>
+      <h2 className="text-2xl font-bold md:text-3xl">Experience and Transition Timeline</h2>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 md:text-base">
-        From Nokia (2020) and Spyrosoft QA leadership into focused Python backend and AI engineering.
+        Quality engineering foundation - backend reliability mindset - Python backend and AI system delivery.
       </p>
 
       <div className="relative mt-6 space-y-5 before:absolute before:left-4 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-slate-300 dark:before:bg-white/20">

@@ -2,19 +2,19 @@ import { motion } from "framer-motion";
 
 const evidence = [
   {
-    title: "Security and Access Control",
+    title: "API Contracts and Validation",
     description:
-      "JWT flows, role-based authorization checks, and hardened API middleware for consistent request security.",
+      "Typed request and response schemas with explicit validation rules to keep backend behavior predictable.",
   },
   {
-    title: "Observability and Error Handling",
+    title: "Reliability by Design",
     description:
-      "Structured logging, centralized exception handlers, and production-oriented failure reporting patterns.",
+      "Service boundaries, defensive error handling, and edge-case thinking shaped by years in test automation.",
   },
   {
-    title: "CI and Release Discipline",
+    title: "Testing and CI Discipline",
     description:
-      "Automated checks across formatting, linting, typing, tests, and vulnerability scans before release paths.",
+      "Automated checks for formatting, linting, typing, and tests to keep quality visible on every change.",
   },
 ];
 
@@ -23,7 +23,7 @@ export function EvidenceSection() {
     <section id="evidence" className="mt-10">
       <h2 className="text-2xl font-bold md:text-3xl">Technical Evidence</h2>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 md:text-base">
-        Concrete implementation patterns demonstrating backend quality and operational thinking.
+        Practical engineering signals visible in project code, CI pipelines, and architecture choices.
       </p>
 
       <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">

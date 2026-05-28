@@ -2,29 +2,29 @@ import { motion } from "framer-motion";
 
 const insights = [
   {
-    category: "Architecture",
-    title: "Layered service boundaries keep APIs testable",
+    category: "Backend Architecture",
+    title: "Layered boundaries improve maintainability",
     description:
-      "Separating routers, services, repositories, and infrastructure reduced coupling and improved test clarity.",
+      "Separating API routers, service logic, and persistence layers helps keep backend code easier to test and evolve.",
   },
   {
-    category: "AI Reliability",
-    title: "Schema-first contracts stabilize LLM outputs",
+    category: "AI Integration",
+    title: "Schema-first outputs reduce LLM ambiguity",
     description:
-      "Treating AI responses as typed contracts reduced parser fragility and improved endpoint predictability.",
+      "Treating model responses as structured contracts makes downstream parsing more reliable in backend workflows.",
   },
   {
-    category: "Quality Engineering",
-    title: "Quality gates shift defects left",
+    category: "Delivery Workflow",
+    title: "CI checks keep iteration safe",
     description:
-      "Combining lint, type checks, property tests, and integration checks in CI made delivery safer and faster.",
+      "Running linting, typing, and automated tests on every change catches regressions early and protects release flow.",
   },
 ];
 
 export function InsightsSection() {
   return (
     <section id="insights" className="mt-10">
-      <h2 className="text-2xl font-bold md:text-3xl">Featured Engineering Insights</h2>
+      <h2 className="text-2xl font-bold md:text-3xl">Engineering Insights</h2>
       <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
         {insights.map((item, index) => (
           <motion.article

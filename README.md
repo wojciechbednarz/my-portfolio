@@ -1,10 +1,26 @@
-# Backend Portfolio (React + Vite)
+# Python Backend Portfolio
 
-Modern SaaS-style portfolio website for backend, SDET, and TestOps engineering work.
+Portfolio repository for a GitHub Pages site focused on Python backend engineering, AI/LLM integrations, and reliability-oriented development.
 
-Live site: https://wojciechbednarz.github.io/my-portfolio/
+Live site: [wojciechbednarz.github.io/my-portfolio](https://wojciechbednarz.github.io/my-portfolio/)
 
-## Stack
+## Positioning
+
+This portfolio highlights:
+
+- FastAPI and async Python backend development
+- Practical AI/LLM workflow integration
+- CI/CD quality gates and testing discipline
+- Cloud-aligned engineering patterns (AWS-oriented workflows)
+
+## Featured projects
+
+- **Habit Tracker**: FastAPI backend with typed contracts, async workflows, and reliability-focused implementation
+- **AI Research Assistant**: Retrieval + LLM orchestration with structured outputs and resilient parsing
+- **VitaOS**: AI-enabled product prototype (developed with help of Claude Code)
+- **Aegis Tactical AI**: Decision-support prototype with backend + geospatial + LLM workflow elements (developed with help of Claude Code)
+
+## Tech stack
 
 - React 18 + TypeScript
 - Vite
@@ -15,11 +31,11 @@ Live site: https://wojciechbednarz.github.io/my-portfolio/
 ## Local development
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-## Production build
+## Build
 
 ```bash
 npm run build
@@ -28,13 +44,16 @@ npm run preview
 
 ## Deployment
 
-The repository deploys automatically on push to `master`/`main`.
-GitHub Actions builds the app and publishes `dist/` to GitHub Pages.
+Deployment is automatic on push to `master`/`main`:
+
+1. GitHub Actions runs install + build
+2. `dist/` is uploaded as the Pages artifact
+3. GitHub Pages serves the static output
 
 ## Content model
 
-- Project data: `src/data/projects.ts`
-- Stack data: `src/data/stack.ts`
-- Timeline data: `src/data/timeline.ts`
+- Project cards: `src/data/projects.ts`
+- Technology stack: `src/data/stack.ts`
+- Experience timeline: `src/data/timeline.ts`
 
-Update those files to keep portfolio content current.
+Update these files to keep portfolio content and positioning current.

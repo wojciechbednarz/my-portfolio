@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 
-const trustTags = ["Python Backend", "FastAPI", "AI/LLM", "AWS Cloud", "CI/CD"];
+const trustTags = ["FastAPI", "Async Python", "Pytest", "CI/CD", "AWS Workflows"];
 
 export function Hero() {
   const reduceMotion = useReducedMotion();
@@ -24,7 +24,7 @@ export function Hero() {
         transition={{ duration: 0.42, delay: 0.06 }}
         className="mt-4 max-w-4xl text-3xl font-extrabold leading-tight md:text-5xl"
       >
-        Building reliable Python backend and AI systems for cloud-native products.
+        Building FastAPI backends and AI integrations with a reliability-first engineering mindset.
       </motion.h1>
 
       <motion.p
@@ -33,8 +33,8 @@ export function Hero() {
         transition={{ duration: 0.42, delay: 0.12 }}
         className="mt-5 max-w-3xl text-slate-700 dark:text-slate-300"
       >
-        I started as an SDET and now focus fully on Python backend development, building FastAPI services,
-        AI/LLM integrations, and AWS workflows with production-grade reliability.
+        I bring 5+ years of quality engineering foundations from Nokia and Spyrosoft into backend delivery:
+        typed API contracts, async service workflows, practical AI/LLM integration, and cloud-aligned Python systems.
       </motion.p>
 
       <motion.div
