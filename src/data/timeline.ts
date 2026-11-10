@@ -3,7 +3,7 @@ import type { TimelineItem } from "@/types/portfolio";
 export const timeline: TimelineItem[] = [
   {
     id: "nokia",
-    period: "Oct 2020-Jan 2025",
+    period: "Oct 2020-Dec 2024",
     title: "Integration and Testing Engineer - Nokia",
     description:
       "Built a strong SDET foundation in integration and system testing across Python automation and telecom environments.",
@@ -15,7 +15,7 @@ export const timeline: TimelineItem[] = [
   },
   {
     id: "spyrosoft-qa",
-    period: "Jan 2025-Jan 2026",
+    period: "Jan 2025-Dec 2025",
     title: "QA Automation Engineer - Spyrosoft",
     description:
       "Focused on iOS automation with Python and Appium while supporting reliable release delivery across teams.",
@@ -30,11 +30,11 @@ export const timeline: TimelineItem[] = [
     period: "Jan 2026-Present",
     title: "Senior QA Automation Software Engineer - Spyrosoft",
     description:
-      "Expanded ownership of automation quality in production projects while deepening technical work in Python and Appium.",
+      "Promoted to Senior. Owns Python orchestration tooling for elevator commissioning and, since August 2026, contributes to Spyrosoft's internal enterprise LLM platform (AI SDLC team).",
     outcomes: [
-      "Continued advanced iOS automation delivery with Python and Appium",
-      "Strengthened release confidence through stable regression automation",
-      "Maintained reusable internal tooling and practical CI quality workflows",
+      "Designed and built Python orchestration tooling for elevator commissioning: state management, hardware-controller integration, error handling",
+      "Fixed defects across an enterprise AI chat platform with agents, MCP tools, and RAG through reviewed merge requests",
+      "Building the evaluation for the team's AI code-review bot: golden review cases and an offline scorer",
     ],
   },
   {
@@ -44,7 +44,8 @@ export const timeline: TimelineItem[] = [
     description:
       "Transitioned from QA automation toward backend engineering through project delivery focused on FastAPI services, async workflows, and AI integrations.",
     outcomes: [
-      "Released Habit Tracker and AI Research Assistant",
+      "Released Habit Tracker (AWS Lambda, Bedrock) and AI Research Assistant (LangGraph, MCP, evaluation)",
+      "AWS Certified Developer - Associate (DVA-C02), May 2026",
       "Built VitaOS and Aegis Tactical AI",
       "Current direction: Python backend development for AI/LLM and AWS-aligned systems",
     ],

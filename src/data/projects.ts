@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "habit-tracker",
     name: "Habit Tracker",
     summary:
-      "FastAPI backend for habit tracking with async workflows, typed API contracts, and reliability-focused development practices.",
-    tags: ["Python", "FastAPI", "Pydantic v2", "SQLAlchemy", "Pytest", "CI/CD"],
+      "Async FastAPI backend deployed on AWS Lambda + RDS with SAM: SQS background worker, SES notifications, S3 presigned report downloads, and an AI coaching endpoint on Amazon Bedrock. Tested with pytest, testcontainers, moto, and Hypothesis.",
+    tags: ["Python", "FastAPI", "AWS Lambda", "Amazon Bedrock", "SQS", "Pytest"],
     repoUrl: "https://github.com/wojciechbednarz/habit-tracker",
     highlight: true,
   },
@@ -14,8 +14,8 @@ export const projects: Project[] = [
     id: "ai-research-assistant",
     name: "AI Research Assistant",
     summary:
-      "LLM-powered research assistant backend with retrieval orchestration, structured outputs, and resilient response parsing.",
-    tags: ["Python", "FastAPI", "RAG", "LangGraph", "OpenRouter", "MCP"],
+      "LangGraph RAG agent with hybrid BM25 + vector retrieval, a human-in-the-loop approval gate, an MCP server written from scratch (JSON-RPC 2.0 over STDIO), and an evaluation harness: golden question set plus LLM-judge faithfulness scoring, traced in Langfuse.",
+    tags: ["Python", "LangGraph", "RAG", "MCP", "LLM Evaluation", "Langfuse"],
     repoUrl: "https://github.com/wojciechbednarz/ai-research-assistant",
   },
   {

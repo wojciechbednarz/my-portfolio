@@ -33,7 +33,7 @@ export function Hero() {
         transition={{ duration: 0.42, delay: 0.12 }}
         className="mt-5 max-w-3xl text-slate-700 dark:text-slate-300"
       >
-        I bring 5+ years of quality engineering foundations from Nokia and Spyrosoft into backend delivery:
+        I bring 6+ years of quality engineering foundations from Nokia and Spyrosoft into backend delivery:
         typed API contracts, async service workflows, practical AI/LLM integration, and cloud-aligned Python systems.
       </motion.p>
 

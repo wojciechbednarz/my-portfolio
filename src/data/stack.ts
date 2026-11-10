@@ -27,8 +27,10 @@ export const stackCategories: StackCategory[] = [
       { name: "Ollama", icon: "OL" },
       { name: "OpenRouter", icon: "OR" },
       { name: "LangGraph", icon: "LG" },
-      { name: "Structured Outputs", icon: "SO" },
+      { name: "Amazon Bedrock", icon: "BR" },
       { name: "MCP", icon: "MP" },
+      { name: "LLM Evaluation", icon: "EV" },
+      { name: "Langfuse", icon: "LF" },
     ],
   },
   {
@@ -36,6 +38,8 @@ export const stackCategories: StackCategory[] = [
     items: [
       { name: "PostgreSQL", icon: "PG" },
       { name: "Redis", icon: "RD" },
+      { name: "AWS Lambda", icon: "LA" },
+      { name: "AWS RDS", icon: "RS" },
       { name: "AWS SQS", icon: "QS" },
       { name: "AWS S3", icon: "S3" },
       { name: "AWS SES", icon: "SE" },
